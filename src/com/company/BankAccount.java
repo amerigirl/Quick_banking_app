@@ -59,6 +59,7 @@ public class BankAccount {
         System.out.println("D. Previous Transaction: ");
         System.out.println("E. Exit: ");
 
+            //do while loop to cycle through option menu (with switch cases for each)
         do {
             System.out.println("=======================================");
             System.out.println("Enter an Option above to get started: ");
@@ -68,8 +69,38 @@ public class BankAccount {
 
 
             switch (option) {
+                case 'A':
+                    System.out.println("-------------------------------");
+                    System.out.println("Balance = " + balance);
+                    System.out.println("-------------------------------");
+                    System.out.println("\n");
+                    break;
 
-            }
+                case 'B':
+                    System.out.println("-------------------------------");
+                    System.out.println("Enter amount to deposit: ");
+                    System.out.println("-------------------------------");
+                    int amountToDeposit = scanner.nextInt();
+                    deposit(amountToDeposit);
+                    System.out.println("\n");
+                    break;
+
+                case 'C':
+                    System.out.println("-------------------------------");
+                    System.out.println("Enter amount to withdraw: ");
+                    System.out.println("-------------------------------");
+                    int amountToWithdraw = scanner.nextInt();
+                    withdraw(amountToWithdraw);
+                    System.out.println("\n");
+
+                case 'D':
+                    System.out.println("--------------------------------");
+                    getPreviousTransaction();
+                    System.out.println("--------------------------------");
+                    System.out.println("\n");
+                    break;
+
+             }
 
 
         }
