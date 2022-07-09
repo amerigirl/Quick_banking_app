@@ -12,8 +12,6 @@ public class ScannerTest {
 
         int a = scanner.nextInt();
         System.out.println("You typed " + a + "," + "thanks!");
-
-        // write your code here
     }
 
 }
